@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kurzy matiky pro VŠ · Vojtěch Kloud</title>
+<meta name="description" content="Předtočené kurzy matiky ke konkrétním předmětům na VŠE, ČZU a IES.">
+<meta property="og:title" content="Kurzy matiky pro VŠ · Vojtěch Kloud">
+<meta property="og:description" content="Předtočené kurzy matiky ke konkrétním předmětům na VŠE, ČZU a IES.">
+<!--
+  Přehled kurzů (Vojtěch Kloud). Vede na něj produkt „Externí odkaz“ v obchodě na vojtakloud.com (Flixy).
+  Stránka nesbírá žádné údaje: žádný formulář, cookies ani skripty, písmo (Raleway) je uložené u stránky.
+  Formulář „Tvůj předmět tu chybí?“ je produkt na Flixy (href="https://vojtakloud.com/p/tv-j-p-edm-t-tu-chyb-uevyci3i6").
+-->
+<style>
+  /* Raleway (stejné písmo jako prodejní stránky na Flixy), SIL OFL, z @fontsource-variable/raleway */
+  @font-face {
+    font-family: "Raleway Variable"; font-style: normal; font-display: swap; font-weight: 100 900;
+    src: url("fonts/raleway-latin-ext-wght-normal.woff2") format("woff2-variations");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+      U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  @font-face {
+    font-family: "Raleway Variable"; font-style: normal; font-display: swap; font-weight: 100 900;
+    src: url("fonts/raleway-latin-wght-normal.woff2") format("woff2-variations");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+      U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  :root {
+    --bg: #000;
+    --text: #fff;
+    --muted: rgba(255, 255, 255, .62);
+    --line: rgba(255, 255, 255, .22);
+    --card: #0d0d0d;
+    --glow: 0 0 22px rgba(255, 255, 255, .07);
+    --accent: #e3262f;
+    --font: "Raleway Variable", "Raleway", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 var(--font); }
+  main { max-width: 540px; margin: 0 auto; padding: 20px 16px 56px; }
+
+  .back { display: inline-block; color: var(--muted); text-decoration: none; font-size: 14px; padding: 6px 0; }
+  .back:hover { color: var(--text); }
+
+  header { margin: 22px 0 30px; }
+  h1 { font: 700 34px/1.15 var(--font); margin: 0 0 12px; }
+  .lead { color: var(--muted); margin: 0; }
+
+  section.school { margin: 0 0 26px; }
+  h2 {
+    font: 700 13px/1 var(--font); letter-spacing: .09em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 10px 4px;
+  }
+  h2 span { font-weight: 400; letter-spacing: .04em; text-transform: none; }
+
+  .list {
+    list-style: none; margin: 0; padding: 0;
+    border: 1px solid var(--line); border-radius: 18px; background: var(--card);
+    box-shadow: var(--glow); overflow: hidden;
+  }
+  .list li + li { border-top: 1px solid var(--line); }
+  .list a {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    padding: 15px 18px; color: var(--text); text-decoration: none;
+  }
+  .list a:hover, .list a:focus-visible { background: rgba(255, 255, 255, .06); outline: none; }
+  .course { font-weight: 600; }
+  .note { display: block; font-size: 14px; color: var(--muted); }
+  .arrow { color: var(--muted); flex: none; font-size: 18px; }
+
+  .missing {
+    margin-top: 40px; padding: 22px 18px 20px;
+    border: 1px solid var(--line); border-radius: 18px; background: var(--card); box-shadow: var(--glow);
+  }
+  .missing h3 { font: 700 24px/1.2 var(--font); margin: 0 0 8px; }
+  .missing p { color: var(--muted); margin: 0 0 18px; }
+  .button {
+    display: block; text-align: center; padding: 14px; border-radius: 12px;
+    font-weight: 700; color: #000; background: #fff; text-decoration: none;
+  }
+  .button:hover { background: rgba(255, 255, 255, .88); }
+
+  .soon { margin: 22px 4px 0; color: var(--muted); }
+  .soon a { color: var(--text); }
+  .soon .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); margin-right: 6px; }
+
+  footer { margin-top: 44px; text-align: center; font-size: 13px; color: var(--muted); }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="https://vojtakloud.com">← vojtakloud.com</a>
+
+  <header>
+    <h1>Kurzy matiky pro vysokou</h1>
+    <p class="lead">Předtočené kurzy ke konkrétním předmětům. Najdi svou školu, klikni na předmět a uvidíš, co v kurzu je.</p>
+  </header>
+
+  <section class="school">
+    <h2>VŠE <span>· Vysoká škola ekonomická</span></h2>
+    <ul class="list">
+      <li><a href="https://vojtakloud.com/p/v-e-matika-a-jok6dh8at"><span class="course">Matika A</span><span class="arrow">→</span></a></li>
+      <li><a href="https://vojtakloud.com/p/v-e-4mm101-xgjy492uw"><span class="course">4MM101</span><span class="arrow">→</span></a></li>
+    </ul>
+  </section>
+
+  <section class="school">
+    <h2>ČZU <span>· Česká zemědělská univerzita</span></h2>
+    <ul class="list">
+      <li><a href="https://vojtakloud.com/p/emm-1-prvn-z-po-et-kpw2bu2mn"><span><span class="course">EMM 1</span><span class="note">první zápočet</span></span><span class="arrow">→</span></a></li>
+      <li><a href="https://vojtakloud.com/p/emm-1-druh-z-po-et-b53h0efhb"><span><span class="course">EMM 1</span><span class="note">druhý zápočet</span></span><span class="arrow">→</span></a></li>
+      <li><a href="https://vojtakloud.com/p/matika-pro-zu-eam-tf-info-uoii2w2jv"><span class="course">Matika EAM / TF / INFO</span><span class="arrow">→</span></a></li>
+      <li><a href="https://vojtakloud.com/p/matika-zu-po-etn-metody-xbvyr70aw"><span class="course">Početní metody</span><span class="arrow">→</span></a></li>
+      <li><a href="https://vojtakloud.com/p/matika-zu-f-p-lfd-0k09o6w9y"><span class="course">Matika FŽP / FLD</span><span class="arrow">→</span></a></li>
+      <li><a href="https://vojtakloud.com/p/matika-pro-zu-paa-k0rk65ovx"><span class="course">Matika PAA</span><span class="arrow">→</span></a></li>
+    </ul>
+  </section>
+
+  <section class="school">
+    <h2>IES <span>· FSV UK</span></h2>
+    <ul class="list">
+      <li><a href="https://vojtakloud.com/p/ies-matematika-1-73afne9ei"><span class="course">Matematika 1</span><span class="arrow">→</span></a></li>
+    </ul>
+  </section>
+
+  <section class="missing">
+    <h3>Tvůj předmět tu chybí?</h3>
+    <p>Napiš mi, na jaké jsi škole a z čeho máš zkoušku. Podle toho vybírám, jaký kurz udělám příště.</p>
+    <a class="button" href="https://vojtakloud.com/p/tv-j-p-edm-t-tu-chyb-uevyci3i6">Napsat, co potřebuju →</a>
+  </section>
+
+  <p class="soon"><span class="dot"></span>Zkoušku máš dřív, než kurz stihnu? <a href="https://vojtakloud.com/p/zarezervuj-si-vodn-konzultaci-zdarma-lc5nzc9ke">Domluv si 1:1 konzultaci zdarma</a>.</p>
+
+  <footer>Vojtěch Kloud · <a href="https://vojtakloud.com">vojtakloud.com</a> · <a href="https://vojtakloud.com/gdpr">Ochrana osobních údajů</a></footer>
+</main>
+</body>
+</html>
